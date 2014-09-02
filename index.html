@@ -62,10 +62,51 @@
         <h1>DÉGUSTEZ UNE GLACE</h1>
         <h2>MAINTENANT TOUT DE SUITE</h2>
         <p>
-          <a href="#" class="btn btn-primary btn-lg">Je veux une glace</a>
+          <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#orderform">
+          Je veux une glace
+          </button>
         </p>
       </div>
     </div>
+
+    <!-- Modal -->
+<div class="modal fade" id="orderform" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Commandez !</h4>
+      </div>
+      <div class="modal-body">
+        <div id="wufoo-zqa81k60qo0gem">
+        Fill out my <a href="https://fboret.wufoo.com/forms/zqa81k60qo0gem">online form</a>.
+        </div>
+        <div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">There are tons of <a href="http://www.wufoo.com/features/">Wufoo features</a> to help make your forms awesome.</div>
+        <script type="text/javascript">var zqa81k60qo0gem;(function(d, t) {
+        var s = d.createElement(t), options = {
+        'userName':'fboret',
+        'formHash':'zqa81k60qo0gem',
+        'autoResize':true,
+        'height':'463',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true};
+        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+        s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try { zqa81k60qo0gem = new WufooForm();zqa81k60qo0gem.initialize(options);zqa81k60qo0gem.display(); } catch (e) {}};
+        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+        })(document, 'script');</script>
+
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>
 
     <div class="vertical-spacer"></div>
 
